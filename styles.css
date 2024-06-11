@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+body {
+    font-family: 'Syne', sans-serif;
+    
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+.style-btn {
+    font-weight: 700;
+    outline: none;
+    border: none;
+    padding: 1rem 2rem;
+    background-color: #87A3BF;
+    font-family: inherit;
+    width: max-content;
+}
+
+
+/* ----- HEADER ------ */
+
+header {
+    width: 90%;
+    margin: 1.5rem auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.nav-links ul,
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: .75rem;
+    list-style: none;
+}
+
+header li a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: .95rem;
+}
+
+.header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.social-links .fa-brands {
+    font-size: 1.25rem;
+}
+
+
+/* ----- HERO ------ */
+
+.hero-txt {
+    width: 45%;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.hero-txt h1 {
+    font-size: 3.5rem;
+}
+
+.hero-txt button {
+    margin: 0 auto;
+}
+
+
+/* ----- INTRO ------ */
+
+.intro-content {
+    width: 90%;
+    margin: 1.5rem auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 3.5rem;
+}
+
+.intro-col {
+    width: 40%;
+}
+
+.intro-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    flex: 1;
+    padding: 2rem 0;
+}
+
+.intro-img {
+    margin: auto;
+}
+
+.intro-img img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ----- SERVICES ------ */
+
+.services-content {
+    width: 90%;
+    margin: 2rem auto;
+}
+.services-content h2 {
+    margin-bottom: 3rem;
+}
+.services-row {
+    display: flex;
+    justify-content: space-between;
+}
+.services-col {
+    width: 30%;
+}
+.service-img {
+    height: 50%;
+    margin-bottom: 1rem;
+}
+.service-img img {
+    width: 100%;
+    height: 90%;
+}
+.services-col h3 {
+    margin-bottom: 1rem;
+}
