@@ -13,6 +13,10 @@ h2 {
     font-size: 2.5rem;
 }
 
+p {
+    line-height: 1.6;
+}
+
 li a {
     text-decoration: none;
     font-weight: 700;
@@ -38,7 +42,7 @@ a .fa-brands {
 
 header {
     width: 90%;
-    margin: 1.5rem auto 0;
+    margin: 1rem auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,15 +76,28 @@ header .logo {
 
 
 /* ----- HERO ------ */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('./images/fill-img.jpeg');
+    background-size: cover;
+    padding: 4rem;
+
+}
 
 .hero-txt {
     width: 45%;
-    margin: 5rem auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 1.5rem;
     text-align: center;
+    
+}
+
+.hero-txt h1,
+.hero-txt p,
+.hero-txt button {
+    color: #f9f9f9;
 }
 
 .hero-txt h1 {
@@ -96,7 +113,7 @@ header .logo {
 
 .intro-content {
     width: 90%;
-    margin: 1.5rem auto;
+    margin: 5% auto;
     display: flex;
     justify-content: space-between;
     gap: 3.5rem;
@@ -125,10 +142,14 @@ header .logo {
 }
 
 /* ----- SERVICES ------ */
+.services {
+    background: linear-gradient(#fff, #e5e5e5, #87A3BF);
+    padding: 2rem;
+}
 
 .services-content {
     width: 90%;
-    margin: 2rem auto;
+    margin: 1rem auto;
 }
 .services-content h2 {
     margin-bottom: 3rem;
@@ -153,10 +174,14 @@ header .logo {
 }
 
 /* ----- REVIEW ------ */
+.review {
+    background: linear-gradient(#87A3BF, #e5e5e5, #fff);
+    padding: 2rem;
+}
 
 .review-content {
     width: 45%;
-    margin: 5rem auto;
+    margin: 2rem auto;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -262,7 +287,7 @@ footer {
     margin-bottom: .5rem;
 }
 .site-col a {
-    margin-bottom: .25rem;
+    margin-bottom: .4rem;
     text-decoration: none;
 }
 
