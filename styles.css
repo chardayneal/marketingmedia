@@ -145,3 +145,72 @@ header li a {
 .services-col h3 {
     margin-bottom: 1rem;
 }
+
+/* ----- REVIEW ------ */
+
+.review-content {
+    width: 45%;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.review-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: .5rem;
+    align-items: center;
+}
+
+.review-img {
+    width: 70px;
+    height: 70px;
+}
+
+.review-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    margin: 0 auto;
+}
+
+/* ----- SUBSCRIBE ------ */
+.subscribe-content {
+    width: 90%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+.subscribe-col {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.subscribe-img img {
+    width: 100%;
+    height: 85%;
+}
+
+.subscribe-txt {
+    width: 50%;
+}
+form {
+    display: flex;
+    gap: .75rem; 
+}
+form #email {
+    width: 70%;
+    border: 1px solid #e5e5e5;
+    padding: 1rem 1.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+}
+form .style-btn {
+    font-size: 1rem;
+}
