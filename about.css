@@ -1,0 +1,34 @@
+/* ----- TITLE ------ */
+.title {
+    background-image: url('./images/about-title-bkg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1.5rem 0;
+}
+
+
+.title h1 {
+    width: 90%;
+    margin: 3rem auto;
+    color: #fff;
+}
+
+/* ----- INTRO ------ */
+.intro a {
+    text-decoration: none;
+}
+
+
+/* ----- TEAM------ */
+#team {
+    background: none;
+}
+#team h2 {
+    text-align: center;
+}
+
+#team .services-col h3,
+#team .services-col p {
+    margin-bottom: .25rem;
+    text-align: center;
+}
