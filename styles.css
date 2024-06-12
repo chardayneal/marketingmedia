@@ -252,6 +252,10 @@ form .style-btn {
     font-size: 1rem;
 }
 
+.subscribed {
+    font-weight: 600;
+    font-style: italic;
+}
 
 /* ----- FOOTER ------ */
 

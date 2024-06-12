@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./contact.css"> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
     <title>Marketing Media, Inc</title>
 </head>
 <body>
@@ -36,9 +37,9 @@
         <section class="contact">
             <div class="contact-content">
                 <div class="title"><h2>CONTACT US</h2></div>
-                <div class="contact-form">
+                <div class="contact-form" id="contact-section">
                     <p>Welcome to a world of limitless possibilities, where the journey is as exhilarating as the destination, and where every moment is an opportunity to make your mark on the canvas of existence. We look forward to providing top quality to our clients because you deserve it. Send us an email and let us know how we can best meet your needs.</p>
-                    <form action="">
+                    <form onsubmit="handleSubmit(event)">
                         <div class="name-info">
                             <input class="text" id="first-name" type="text" placeholder="First name *" required>
                             <input class="text" id="last-name" type="text" placeholder="Last name *" required>

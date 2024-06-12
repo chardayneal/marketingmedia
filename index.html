@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles.css"> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
     <title>Marketing Media, Inc</title>
 </head>
 <body>
@@ -44,7 +45,7 @@
                 <div class="intro-col intro-txt">
                     <h2>A TEAM FULL OF ELITE EXPERTS</h2>
                     <p>With a blend of creativity, strategy, and finesse, we're here to fuel your brand's journey to the top. We employ the best consultants that are knowledgeable and proven to bring success to all clients, ensuring your goals are always the priority.</p>
-                    <button class="style-btn">MEET THE TEAM</button>
+                    <a href="./about.html#team" class="style-btn">MEET THE TEAM</a>
                 </div>
                 <div class="intro-col intro-img">
                     <img src="./images/fill-img.jpeg" alt="textured imaged greyscale">
@@ -87,10 +88,10 @@
         <section class="subscribe">
             <div class="subscribe-content">
                 <div class="subscribe-col subscribe-img"><img src="./images/fill-img.jpeg" alt=""></div>
-                <div class="subscribe-col subscribe-txt">
+                <div class="subscribe-col subscribe-txt" id="subscribe-section">
                     <h2>SUBSCRIBE</h2>
-                    <p>Subscribe to receive tips and trends that will boost engagement with your audience and promote growth for your brand.</p>
-                    <form action="">
+                    <p id="subscribe-text">Subscribe to receive tips and trends that will boost engagement with your audience and promote growth for your brand.</p>
+                    <form id="subscribe-form" onsubmit="handleSubscribe(event)">
                         <input class="text" id="email" type="email" placeholder="Enter email here..." required>
                         <input class="style-btn" type="submit" value="SUBSCRIBE">
                     </form>
@@ -103,7 +104,7 @@
         <section class="footer-content">
             <div class="footer-txt">
                 <h2>MARKETING <br> MEDIA, INC</h2>
-                <button class="style-btn">CONTACT US</button>
+                <a href="./contact.html" class="style-btn">CONTACT US</a>
             </div>
             <div class="site-links">
                 <div class="site-col">
