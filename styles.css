@@ -35,6 +35,7 @@ a .fa-brands {
     background-color: #87A3BF;
     font-family: inherit;
     width: max-content;
+    text-decoration: none;
 }
 
 
@@ -239,10 +240,11 @@ form {
     display: flex;
     gap: .75rem; 
 }
-form #email {
+
+form .text {
     width: 70%;
     border: 1px solid #e5e5e5;
-    padding: 1rem 1.75rem;
+    padding: 16px 25px;
     font-family: inherit;
     font-size: 1rem;
 }

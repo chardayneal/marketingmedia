@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css"> 
-    <link rel="stylesheet" href="./about.css">
-    <title>About Marketing Media</title>
+    <link rel="stylesheet" href="./contact.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Media, Inc</title>
 </head>
 <body>
 
@@ -19,7 +19,7 @@
         <div class="header-left"><a href="./index.html" class="logo">MARKETING MEDIA, INC</a></div>
         <nav class="nav-links">
             <ul>
-                <li><a href="#">ABOUT</a></li>
+                <li><a href="./about.html">ABOUT</a></li>
                 <li><a href="./services.html">SERVICES</a></li>
             </ul>
         </nav>
@@ -33,42 +33,25 @@
     </header>
 
     <main>
-        <section class="title">
-            <h1>ABOUT US</h1>
-        </section>
-        <section class="intro">
-            <div class="intro-content">
-                <div class="intro-col intro-txt">
-                    <h2>A TEAM FULL OF ELITE EXPERTS</h2>
-                    <p>With a blend of creativity, strategy, and finesse, we're here to fuel your brand's journey to the top. We employ the best consultants that are knowledgeable and proven to bring success to all clients, ensuring your goals are always the priority.</p>
-                    <a href="#team" class="style-btn">MEET THE TEAM</a>
-                </div>
-                <div class="intro-col intro-img">
-                    <img src="./images/fill-img.jpeg" alt="textured imaged greyscale">
-                </div>
-            </div>
-        </section>
-        <section class="services" id="team">
-            <div class="services-content">
-                <h2>OUR TEAM</h2>
-                <div class="services-row">
-                    <div class="services-col">
-                        <div class="service-img"><img src="./images/service-image.png" alt=""></div>
-                        <h3>CLARK D.</h3>
-                        <p>Account Manager</p>
-                    </div>
-                    <div class="services-col">
-                        <div class="service-img"><img src="./images/service-image.png" alt=""></div>
-                        <h3>DIANA H.</h3>
-                        <p>Marketing Specialist</p>
-                    </div>
-                    <div class="services-col">
-                        <div class="service-img"><img src="./images/service-image.png" alt=""></div>
-                        <h3>PETER B.</h3>
-                        <p>Director of Creative Services</p>
-                    </div>
+        <section class="contact">
+            <div class="contact-content">
+                <div class="title"><h2>CONTACT US</h2></div>
+                <div class="contact-form">
+                    <p>Welcome to a world of limitless possibilities, where the journey is as exhilarating as the destination, and where every moment is an opportunity to make your mark on the canvas of existence. We look forward to providing top quality to our clients because you deserve it. Send us an email and let us know how we can best meet your needs.</p>
+                    <form action="">
+                        <div class="name-info">
+                            <input class="text" id="first-name" type="text" placeholder="First name *" required>
+                            <input class="text" id="last-name" type="text" placeholder="Last name *" required>
+                        </div>
+                        <input class="text" id="email" type="email" placeholder="Email *" required>
+                        <textarea class="text" id="message" name="message" >Message</textarea>
+                        <input class="style-btn" type="submit" value="SUBMIT">
+                    </form>
                 </div>
             </div>
+        </section>
+        <section class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12689.24997880098!2d-121.49998641687147!3d38.58068632782945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA!5e0!3m2!1sen!2sus!4v1718209611950!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
 
@@ -87,11 +70,11 @@
                 </div>
                 <div class="site-col">
                     <h4>COMPANY</h4>
-                    <a href="#">About</a>
+                    <a href="./about.html">About</a>
                 </div>
                 <div class="site-col">
                     <h4>HELP</h4>
-                    <a href="./contact.html">Contact</a>
+                    <a href="#">Contact</a>
                     <a href="#">FAQs</a>
                 </div>
             </div>
@@ -99,7 +82,7 @@
         <section class="footer-links">
             <div class="nav-links">
                 <ul>
-                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
                     <li><a href="./services.html">SERVICES</a></li>
                     <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li> 
