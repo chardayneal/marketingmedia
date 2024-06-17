@@ -40,7 +40,6 @@ a .fa-brands {
 
 
 /* ----- HEADER ------ */
-
 header {
     width: 90%;
     margin: 1rem auto;
@@ -48,13 +47,11 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
 header .logo {
     font-size: 1.4rem;
     font-weight: 600;
     text-decoration: none;
 }
-
 .nav-links ul,
 .social-links {
     display: flex;
@@ -62,19 +59,33 @@ header .logo {
     gap: .75rem;
     list-style: none;
 }
-
-
-
 .header-right {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
 }
-
 .social-links .fa-brands {
     font-size: 1.25rem;
 }
+.fa-bars {
+    display: none;
+}
+
+
+/* ----- MEDIA QUERY: header ------ */
+@media only screen and (max-width: 600px) {
+    nav {
+        display: none;
+    }
+    .header-right {
+        display: none;
+    }
+    .fa-bars {
+        display: block;
+    }
+}
+
 
 
 /* ----- HERO ------ */
@@ -111,6 +122,21 @@ h1 {
     text-decoration: none;
 }
 
+/* ----- MEDIA QUERY: header ------ */
+@media only screen and (max-width: 600px) {
+    .hero {
+        padding: 1.5rem;
+    }
+    .hero-txt {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+}
+
+
 
 /* ----- INTRO ------ */
 
@@ -133,6 +159,7 @@ h1 {
     gap: 1.5rem;
     flex: 1;
     padding: 2rem 0;
+    min-width: 450px;
 }
 
 .intro-img {
@@ -142,6 +169,24 @@ h1 {
 .intro-img img {
     width: 100%;
     height: 100%;
+}
+
+
+/* ----- MEDIA QUERY: intro ------ */
+@media only screen and (max-width: 600px) {
+    .intro-content {
+        flex-wrap: wrap-reverse;
+    }
+    .intro-col {
+        width: 90%;
+    }
+    .intro-txt {
+        min-width: 300px;
+        text-align: center;
+    }
+    .intro-col a {
+        margin: 0 auto;
+    }
 }
 
 /* ----- SERVICES ------ */
@@ -160,9 +205,11 @@ h1 {
 .services-row {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .services-col {
     width: 30%;
+    min-width: 350px;
 }
 .service-img {
     height: 50%;
@@ -175,6 +222,16 @@ h1 {
 .services-col h3,
 .services p {
     margin-bottom: 1rem;
+}
+
+/* ----- MEDIA QUERY: header ------ */
+@media only screen and (max-width: 600px) {
+    .services-content h2 {
+        text-align: center;
+    }
+    .services-row {
+       justify-content: center;
+    }
 }
 
 /* ----- REVIEW ------ */
@@ -213,12 +270,28 @@ h1 {
     margin: 0 auto;
 }
 
+/* ----- MEDIA QUERY: review ------ */
+@media only screen and (max-width: 600px) {
+    .review-content {
+        width: 70%;
+    }
+}
+@media only screen and (min-width: 601px) {
+    .review {
+        padding: 2rem .75rem;
+    }
+    .review-content {
+        width: 90%;
+    }
+}
+
 /* ----- SUBSCRIBE ------ */
 .subscribe-content {
     width: 90%;
     margin: 3rem auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .subscribe-col {
     width: 40%;
@@ -235,6 +308,7 @@ h1 {
 
 .subscribe-txt {
     width: 50%;
+    min-width: 400px;
 }
 form {
     display: flex;
@@ -257,6 +331,43 @@ form .style-btn {
     font-style: italic;
 }
 
+/* ----- MEDIA QUERY: subscribe ------ */
+@media only screen and (max-width: 600px) {
+    .subscribe-content {
+        justify-content: center;
+    }
+    .subscribe-img {
+        width: 90%;
+    }
+    .subscribe-txt {
+        min-width: 300px;
+        text-align: center;
+    }
+    #subscribe-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .subscribe-col {
+        width: 90%;
+    }
+
+    .subscribe-txt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
 /* ----- FOOTER ------ */
 
 footer {
@@ -267,12 +378,17 @@ footer {
     padding-top: 2rem;
 }
 
+
 .footer-content,
 .footer-links {
     width: 90%;
     margin: 0 auto;
-    display: flex;
-    
+    display: flex;  
+    gap: 2rem;
+}
+
+.footer-content {
+    flex-wrap: wrap;
 }
 
 .footer-txt {
@@ -287,6 +403,7 @@ footer {
     flex: 1;
     display: flex;
     justify-content: space-around;
+    min-width: 500px;
 }
 
 .site-col {
@@ -305,4 +422,39 @@ footer {
     display: flex;
     justify-content: space-between;
     margin: 3.5rem 0 2rem;
+}
+
+/* ----- MEDIA QUERY: footer ------ */
+@media only screen and (max-width: 600px) {
+    .footer-txt {
+        width: 90%;
+        box-sizing: border-box;
+        padding-bottom: 2rem;
+    }
+    
+    .site-links {
+        flex-direction: column;
+        margin: 1rem auto 0;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media only screen and (min-width: 601px) {
+    .footer-txt {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-txt h2 {
+        text-align: center;
+    }
 }
