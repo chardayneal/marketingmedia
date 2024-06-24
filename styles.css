@@ -244,6 +244,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 1rem;
 }
 .services-col {
     width: 30%;
@@ -263,15 +264,17 @@ h1 {
 }
 
 /* ----- MEDIA QUERY: services ------ */
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1318px) {
+    
     .services-content {
         max-width: 1300px;
     }
     .services-col {
+        width: 25%;
         max-width: 350px;
     }
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1317px) {
     .services-col {
         width: 25%;
     }

@@ -23,6 +23,7 @@
 #team {
     background: none;
 }
+
 #team h2 {
     text-align: center;
 }
@@ -33,7 +34,9 @@
     text-align: center;
 }
 
-/* ----- TEAM------ */
+
+
+/* ----- FOOTER ------ */
 footer {
     background-color: black;
     color: #eee;
@@ -42,6 +45,7 @@ footer {
 footer a,
 footer button,
 footer h2,
-footer h4 {
+footer h4,
+footer i {
     color: #eee;
 }
