@@ -37,6 +37,10 @@ a .fa-brands {
     width: max-content;
     text-decoration: none;
 }
+.style-btn:hover {
+    background-color: black;
+    color:#f9f9f9;
+}
 
 
 /* ----- HEADER ------ */
@@ -70,6 +74,25 @@ header .logo {
 }
 .fa-bars {
     display: none;
+}
+
+.nav-links a,
+.social-links a,
+.copyright-link {
+    position: relative;
+    top: 0;
+    transition: top ease 0.3s;
+}
+.nav-links a:hover,
+.social-links a:hover,
+.copyright-link:hover {
+    top: -5px;
+    
+}
+
+.current-link {
+    color:#87A3BF;
+    text-decoration: underline;
 }
 
 
@@ -494,6 +517,9 @@ footer {
     justify-content: space-around;
     min-width: 500px;
 }
+.site-links a:hover {
+    text-decoration: underline;
+}
 
 .site-col {
     display: flex;
@@ -512,6 +538,8 @@ footer {
     justify-content: space-between;
     margin: 3.5rem 0 2rem;
 }
+
+
 
 /* ----- MEDIA QUERY: footer ------ */
 @media only screen and (min-width: 1300px) {
