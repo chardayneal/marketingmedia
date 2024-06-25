@@ -51,10 +51,14 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+header .header-left {
+    flex: 1;
+}
 header .logo {
     font-size: 1.4rem;
     font-weight: 600;
     text-decoration: none;
+    width: max-content;
 }
 .nav-links ul,
 .social-links {
@@ -72,7 +76,8 @@ header .logo {
 .social-links .fa-brands {
     font-size: 1.25rem;
 }
-.fa-bars {
+.fa-bars,
+.contact-link {
     display: none;
 }
 
@@ -87,12 +92,25 @@ header .logo {
 .social-links a:hover,
 .copyright-link:hover {
     top: -5px;
-    
+
 }
 
 .current-link {
     color:#87A3BF;
     text-decoration: underline;
+}
+
+.fa-times {
+    display: none;
+    font-size: 1.5rem;
+    padding: 1.25rem;
+}
+
+#menu-option {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -103,17 +121,71 @@ header .logo {
     }
 }
 @media only screen and (max-width: 850px) {
-    header .nav-links ul {
+    header .header-right {
         display: none;
+    }
+    #menu-option {
+        justify-content: end;
     }
 }
 @media only screen and (max-width: 625px) {
-    .header-right {
-        display: none;
+    header .nav-links ul,
+    header .social-links {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
+
+    header .nav-links ul li,
+    header .social-links .fa-brands {
+        margin-left: 15%;
+        
+    }
+    header .nav-links a {
+        font-size: 1.25rem;
+    }
+    header .social-links {
+        margin-top: 2rem;
+    }
+
+    header .social-links .fa-brands,
+    .contact-link {
+        display: inherit;
+    }
+
+
     header .fa-bars {
         display: block;
     }
+    header .header-right {
+        display: inherit;
+    }
+
+    header .style-btn {
+        display: none;
+    }
+
+    #menu-option {
+        display: block;
+        position: fixed;
+        background-color: #87A3BF;
+        color: black;
+        height: 100vh;
+        width: 80%;
+        top: 0;
+        right: -80%;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+
+    }
+    .fa-times {
+        display: block;
+    }
+    .current-link {
+        color: #f9f9f9;
+    }
+
 }
 @media only screen and (max-width: 460px) {
     .header-left {

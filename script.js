@@ -1,8 +1,16 @@
 let subscribeSection = document.getElementById("subscribe-section");
-
-
 let contactSection = document.getElementById('contact-section');
 
+const menu = document.getElementById("menu-option");
+
+function hideMenu() {
+    menu.style.right = "-80%";
+}
+
+function showMenu() {
+    menu.style.right = "0";
+    console.log("Show menu!");
+}
 
 handleSubscribe = (e) => {
 

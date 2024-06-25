@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./services.css"> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
     <title>Marketing Media Services</title>
 </head>
 <body>
@@ -17,20 +18,23 @@
 
     <header>
         <div class="header-left"><a href="./index.html" class="logo">MARKETING MEDIA, INC</a></div>
-        <nav class="nav-links">
-            <ul>
-                <li><a href="./about.html">ABOUT</a></li>
-                <li><a class="current-link" href="#">SERVICES</a></li>
-            </ul>
-        </nav>
-        <div class="header-right">
-            <ul class="social-links">
-                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-            </ul>
-            <a href="./contact.html" class="style-btn">GET STARTED</a>
+        <div id="menu-option">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a class="current-link" href="#">SERVICES</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <ul class="social-links">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+                <a href="./contact.html" class="style-btn">GET STARTED</a>
+            </div>
         </div>
-        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
     </header>
 
     <main>
